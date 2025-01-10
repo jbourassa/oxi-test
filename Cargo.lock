@@ -13,16 +13,14 @@ dependencies = [
 
 [[package]]
 name = "bindgen"
-version = "0.69.5"
+version = "0.71.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "271383c67ccabffb7381723dea0672a673f292304fcb45c01cc648c7a8d58088"
+checksum = "5f58bf3d7db68cfbac37cfc485a8d711e87e064c3d0fe0435b92f7a407f9d6b3"
 dependencies = [
  "bitflags",
  "cexpr",
  "clang-sys",
  "itertools",
- "lazy_static",
- "lazycell",
  "proc-macro2",
  "quote",
  "regex",
@@ -91,12 +89,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
-name = "lazycell"
-version = "1.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "830d08ce1d1d941e6b30645f1a0eb5643013d835ce3779a5fc208261dbe10f55"
-
-[[package]]
 name = "libc"
 version = "0.2.169"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -162,18 +154,16 @@ dependencies = [
 
 [[package]]
 name = "rb-sys"
-version = "0.9.105"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4b3a1f3ce8e7c36d777d52fe7a99039fe4fea7c8ec355a4c4f3a17f92a14029f"
+version = "0.9.106"
+source = "git+https://github.com/jbourassa/rb-sys.git?branch=ruby-3.4-windows-fix#b4f4aa4c5c395a96ad86aa3612ddc7ead7aa6b69"
 dependencies = [
  "rb-sys-build",
 ]
 
 [[package]]
 name = "rb-sys-build"
-version = "0.9.105"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3e6b246c29c0809e1cbe60a1ba9e093da72a4676d02adc68469297d1e589bbf0"
+version = "0.9.106"
+source = "git+https://github.com/jbourassa/rb-sys.git?branch=ruby-3.4-windows-fix#b4f4aa4c5c395a96ad86aa3612ddc7ead7aa6b69"
 dependencies = [
  "bindgen",
  "lazy_static",
@@ -186,9 +176,8 @@ dependencies = [
 
 [[package]]
 name = "rb-sys-env"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5b0412803f8fea126e8f500d8eb6d5394a983517888a790254f4190e9b16a7a5"
+version = "0.2.2"
+source = "git+https://github.com/jbourassa/rb-sys.git?branch=ruby-3.4-windows-fix#b4f4aa4c5c395a96ad86aa3612ddc7ead7aa6b69"
 
 [[package]]
 name = "regex"
@@ -221,9 +210,9 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 
 [[package]]
 name = "rustc-hash"
-version = "1.1.0"
+version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "08d43f7aa6b08d49f382cde6a7982047c3426db949b1424bc4b7ec9ae12c6ce2"
+checksum = "c7fb8039b3032c191086b10f11f319a6e99e1e82889c5cc6046f515c9db1d497"
 
 [[package]]
 name = "shell-words"

@@ -10,14 +10,14 @@ publish = false
 crate-type = ["cdylib"]
 
 [dependencies]
-rb-sys = { version = "0.9", features = [
+rb-sys = { git = "https://github.com/jbourassa/rb-sys.git", branch = "ruby-3.4-windows-fix", version = "0.9", features = [
   "bindgen-rbimpls",
   "bindgen-deprecated-types",
   "stable-api-compiled-fallback",
 ] }
 
 [dev-dependencies]
-rb-sys = { version = "0.9", features = [
+rb-sys = { git = "https://github.com/jbourassa/rb-sys.git", branch = "ruby-3.4-windows-fix",features = [
   "link-ruby",
   "bindgen-rbimpls",
   "bindgen-deprecated-types",
@@ -25,4 +25,4 @@ rb-sys = { version = "0.9", features = [
 ] }
 
 [build-dependencies]
-rb-sys-env = { version = "0.2" }
+rb-sys-env = { git = "https://github.com/jbourassa/rb-sys.git", branch = "ruby-3.4-windows-fix", version = "0.2" }
